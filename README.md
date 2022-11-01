@@ -8,7 +8,4 @@
 `npm start`
 
 ## TODO
-* Tests
-* Scan all pages for stuff that should be linked
-* Clean up unneeded NPX files
-
+* Tests the components. (`Page` and `ExternalLink` make more sense than `Header`)
