@@ -1,0 +1,36 @@
+.blogCard {
+  margin-bottom: 24px;
+  padding: 10px;
+  border: 12px solid #5fb3bd;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.blogCard p {
+  font-size: 20px;
+}
+
+.blogCard__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.blogCard__header h1{
+  margin: 0px;
+  font-size: 32px;
+}
+
+.blogCard__header h2{
+  margin: 0px;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+
+.blogPost__back {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 24px;
+}

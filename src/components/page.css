@@ -1,0 +1,60 @@
+.content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page {
+  background-color: #ededed;
+  padding-bottom: 50px;
+}
+
+.pageTitle {
+  font-size: 44px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.textField {
+  margin-bottom: 10px;
+  padding: 16px;
+  border: 12px solid #5fb3bd;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.textField p {
+  margin: 0px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.textField h1 {
+  margin: 0px;
+}
+.textField h2 {
+  margin: 0px;
+}
+.textField h3 {
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.textField img {
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.textField ol {
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.textField li {
+  line-height: 130%;
+  margin-bottom: 10px;
+}
