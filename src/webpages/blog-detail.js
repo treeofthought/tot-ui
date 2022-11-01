@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import Page from '../components/page.js';
+import apiService from '../services/api-service.js';
 import './blog.css';
 
 function BlogDetail() {
@@ -10,8 +11,7 @@ function BlogDetail() {
 
   useEffect(() => {
     const getDetail = async () => {
-      const response = await fetch(`http://127.0.0.1:5000/blogs/${slug}`)
-      const detail = JSON.parse(await response.text())
+      const detail = await apiService.getBlog(slug)
       setDetail(detail)
     }
     getDetail()

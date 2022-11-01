@@ -2,7 +2,7 @@
 
 ## Configuration
 ### Environment variables
-* `API_URL` host for calls to back end API
+* `REACT_APP_API_URL` host for calls to back end API
 
 ## Launch the app
 `npm start`
