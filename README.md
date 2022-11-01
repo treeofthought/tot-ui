@@ -7,6 +7,9 @@
 ## Launch the app
 `npm start`
 
+## Tests
+`npm test` to run tests
+
 ## TODO
 * Tests
 * Scan all pages for stuff that should be linked
