@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Page from '../components/page.js';
+import apiService from '../services/api-service.js';
 import './blog.css'
 
 function BlogCard(props) {
@@ -21,8 +22,7 @@ function Blog() {
 
   useEffect(() => {
     const getBlogList = async () => {
-      const response = await fetch('http://127.0.0.1:5000/blog-list')
-      const list = JSON.parse(await response.text())
+      const list = await apiService.getBlogsList()
       setBlogList(list)
     }
     getBlogList()

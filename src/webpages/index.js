@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Page from '../components/page.js';
+import apiService from '../services/api-service.js';
 import { Link } from 'react-router-dom';
 
 function Index() {
@@ -7,9 +8,7 @@ function Index() {
 
   useEffect(() => {
     const getLatestBlog = async () => {
-      const response = await fetch('http://127.0.0.1:5000/blog-latest')
-      const list = JSON.parse(await response.text())
-      
+      const list = await apiService.getLatestBlog();
       setLatestBlog(list)
     }
     getLatestBlog()
