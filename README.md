@@ -7,5 +7,8 @@
 ## Launch the app
 `npm start`
 
+## Tests
+`npm test` to run tests
+
 ## TODO
 * Tests the components. (`Page` and `ExternalLink` make more sense than `Header`)
