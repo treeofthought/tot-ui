@@ -10,15 +10,10 @@ function Projects() {
       </p>
       <div className="textField">
         <h2>Technology</h2>
-
         <ul>
           <li><Link to='/projects/this-website'>This website</Link></li>
-          <li>World records dataset</li>
-          <li>Marvel movies dataset</li>
         </ul>
-
         <h2>Music</h2>
-
         <h3>Live at West Orange</h3>
         <ul>
           <li><a href="https://soundcloud.com/user-914143480/harland-ember-live-in-west-orange-71522" target="_blank">Ember</a></li>
