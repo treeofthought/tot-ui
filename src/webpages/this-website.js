@@ -22,10 +22,10 @@ function ThisWebsite() {
         </p>
 
         <h3>Hosting / Deployment</h3>
-        <p>I host the website in AWS, because that's what my company uses, so 
-        new knowledge or AWS tools I build are applicable in both places.</p>
-        <p>The flask app lives in Elastic beanstalk</p>
-        <p>The react app is hosted in S3 and served via a Cloudfront distribution.</p>
+        <p>The back end and front end are hosted in their own Heroku apps</p>
+        <p>The back end uses a Heroku Postgres database</p>
+        <p>Right now I deploy manually from git branches</p>
+        <p>I plan to eventually power the blog entirely as a directory of markdown files</p>
       </div>
       <div className="blogPost__back"><Link to='/projects'>Projects</Link></div>
     </Page>
