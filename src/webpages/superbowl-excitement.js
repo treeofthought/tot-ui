@@ -15,7 +15,7 @@ function SuperBowlExcitement() {
     }
   }, []);
   return(
-    <DraftLogin>
+    <>
       <div className="d-flex flex-column align-items-center gap-2">
         <h1>Measuring Super Bowl Excitement</h1>
         <em>In collaboration with <a href="https://www.daniellecarrick.com/" target="_blank">Danielle Carrick</a></em>
@@ -61,7 +61,7 @@ function SuperBowlExcitement() {
         <h5>Acknowledgements</h5>
         <p><a href="https://www.nflfastr.com/" target="_blank">nflfastR</a> provided the raw data that allowed us to derive and compute these metrics.</p> 
       </div>
-    </DraftLogin>
+    </>
   )
 }
 
