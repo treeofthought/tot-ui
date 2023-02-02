@@ -1,7 +1,19 @@
 import DraftLogin from '../components/draft-login.js';
-import Viz from '../viz1.svg';
+import { useEffect } from 'react';
 
 function SuperBowlExcitement() {
+    useEffect(() => {
+    const script = document.createElement('script');
+
+    script.src = "https://public.flourish.studio/resources/embed.js";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
   return(
     <DraftLogin>
       <div className="d-flex flex-column align-items-center gap-2">
@@ -33,9 +45,7 @@ function SuperBowlExcitement() {
         <p>
           Explore our visualization below to see how each Super Bowl ranks along all three metrics! 
         </p>
-        <div className="text-center">
-          <img src={Viz} className="img-fluid mb-4"/>
-        </div>
+        <div className="flourish-embed flourish-table" data-src="visualisation/12623219?662766"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
         <p>
           So, what were the most exciting Superbowls?
         </p>
