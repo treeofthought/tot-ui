@@ -4,12 +4,12 @@ import surpriseExtremes from '../surprise_extremes.png';
 import tightExtremes from '../tight_extremes.png';
 import motionMotive from '../motion_motive.png';
 import motionExtremes from '../motion_extremes.png';
-import { MathComponent } from "mathjax-react";
+// import { MathComponent } from "mathjax-react";
 
 function SuperBowlExcitementMethod() {
   // const example = String.raw`\int_{-\infty}^{\infty}e^{-x^2}\ dx`;
-  const surpriseForm = String.raw`Surprisingness = \sum_{i=1}^n \frac{1 - w_i}{n}`;
-  const tightForm = String.raw`Tightnesss = 1 - 2 * \big|0.5 - w_i\big|`
+  // const surpriseForm = String.raw`Surprisingness = \sum_{i=1}^n \frac{1 - w_i}{n}`;
+  // const tightForm = String.raw`Tightnesss = 1 - 2 * \big|0.5 - w_i\big|`
   
   return(
       <>
@@ -59,7 +59,8 @@ function SuperBowlExcitementMethod() {
           <p>
             As an equation, the metric is: 
           </p>
-          <MathComponent tex={surpriseForm} display={true} />
+          <div>LaTex here if I can figure that out</div>
+          {/*<MathComponent tex={surpriseForm} display={true} />*/}
           <p>
             This measure is great! It's simple to calculate, easy to understand, and easy to interpret. It also has a clear geometric meaning...the surprisingness is "the area above the line" in the win probability chart.
           </p>
@@ -80,7 +81,7 @@ function SuperBowlExcitementMethod() {
           <p>
             But just like with surprisingness, we need to do some algebra so that the metric is  close to 0 when the game is not very tight, and "1" when the game is very tight.  In this case, the result of that algebra is:
           </p>
-           <MathComponent tex={tightForm} display={true} />
+           <div>LaTex here if I can figure that out</div>
           <p>
             This metric <em>also</em> has a convenienent visual interpretation.  If there is more area between the win probability line and the 50% mark, then the game is less tight.  Here's a picture:
           </p>
