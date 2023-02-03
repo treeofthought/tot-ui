@@ -34,7 +34,7 @@ function Index() {
         <p>My name is Stuart Mason.</p>
         <p>I don't know what this website is yet. Part blog, part digital portfolio, maybe.</p>
         <p>I'm working on a data science project that has to do with <a href="/superbowl-excitement">quantifying the excitement of Super Bowls</a>. (It's just a draft, so for now, you need the password to see it!)</p>
-        <p>You can follow me on twitter: <a href="https://twitter.com/treeofthought1" target="_blank">@treeofthought1</a></p>
+        <p>You can follow me on twitter: <a href="https://twitter.com/treeofthought1" target="_blank" rel="noreferrer">@treeofthought1</a></p>
       </div>
     </>
   )

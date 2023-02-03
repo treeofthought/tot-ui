@@ -1,4 +1,3 @@
-import DraftLogin from '../components/draft-login.js';
 import { useEffect } from 'react';
 import SB2013_SEA_DEN from '../2013_SEA_DEN.png';
 import SB2016_NE_ATL from '../2016_NE_ATL.png';
@@ -22,7 +21,7 @@ function SuperBowlExcitement() {
     <>
       <div className="d-flex flex-column align-items-center gap-2">
         <h1>Measuring Super Bowl Excitement</h1>
-        <em>In collaboration with <a href="https://www.daniellecarrick.com/" target="_blank">Danielle Carrick</a></em>
+        <em>In collaboration with <a href="https://www.daniellecarrick.com/" target="_blank" rel="noreferrer">Danielle Carrick</a></em>
       </div>
       <div className="col-md-10 offset-md-1 rounded-3 p-3 shadow bg-light mb-5">
         <p>
@@ -59,13 +58,13 @@ function SuperBowlExcitement() {
           <strong>Super Bowl XLII</strong> between New England and the New York Giants is third best in our composite score.  Here's the win probability chart:
         </p>
         <div className="text-center mb-5">
-          <img src={SB2007_NYG_NE} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+          <img src={SB2007_NYG_NE} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} alt="Super Bowl XLII between New England and the New York Giants"/>
         </div>
         <p>
           <strong>Super Bowl LI</strong> between New England and Atlanta was the most surprising outcome by far, and this made it second in our composite score despite being average for motion and second-from last for tightness.
         </p>  
         <div className="text-center mb-5">
-          <img src={SB2016_NE_ATL} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+          <img src={SB2016_NE_ATL} style={{objectFit: 'contain', maxWidth: '800px', width:'100%' }} alt="Super Bowl LI between New England and Atlanta"/>
         </div>
         <p>
           This illustrates the tradeoff between these two metrics. In order to be extremely surprising, a game must be extremely lopsided!
@@ -74,7 +73,7 @@ function SuperBowlExcitement() {
           And ranking at number one on our composite score is <strong>Super Bowl LIX</strong> between New England and Seattle.  Looking at the win probability chart, it does seem like this game had a good balance of tightness, surprise, and motion! 
         </p>
         <div className="text-center mb-5">
-          <img src={SB2014_NE_SEA} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+          <img src={SB2014_NE_SEA} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} alt="Super Bowl LIX between New England and Seatlle"/>
         </div>
         <p>
           The above illustrates that because we have three different metrics, the question of "most" exciting is complicated, because it matters how you balance those three metrics.
@@ -83,12 +82,12 @@ function SuperBowlExcitement() {
           The question of <em>least</em> exciting is not so complex, because <strong>Super Bowl XLVIII</strong> came dead last in all three metrics, making this the most one-sided, least-surprising, and static superbowl of them all. Here's a closer look at the win probability chart:
         </p>
         <div className="text-center mb-5">
-          <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+          <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} alt="Super Bowl XLVIII between Seattle and Denver"/>
         </div>
         <p className="text-center"><a href="/superbowl-excitement/methods">Learn more about how we compute these metrics</a></p>
         <div className="text-center">~~~</div>
         <h5>Acknowledgements</h5>
-        <p><a href="https://www.nflfastr.com/" target="_blank">nflfastR</a> provided the raw data that allowed us to derive and compute these metrics.</p> 
+        <p><a href="https://www.nflfastr.com/" target="_blank" rel="noreferrer">nflfastR</a> provided the raw data that allowed us to derive and compute these metrics.</p> 
       </div>
     </>
   )
