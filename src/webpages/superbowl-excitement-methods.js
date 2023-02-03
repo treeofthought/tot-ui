@@ -3,7 +3,7 @@ import SB2013_SEA_DEN from '../2013_SEA_DEN.png';
 
 function SuperBowlExcitementMethod() {
   return(
-      <div className="d-flex flex-column align-items-center gap-2">
+      <>
         <div className="d-flex flex-column align-items-center gap-2">
           <h1>Super Bowl Excitement Methodology</h1>
           <em>In collaboration with <a href="https://www.daniellecarrick.com/" target="_blank">Danielle Carrick</a></em>
@@ -97,7 +97,7 @@ function SuperBowlExcitementMethod() {
           <h3>What's so hard about weighting all metrics equally?</h3>
         </div>
           <em>Back to <a href="/superbowl-excitement">Super Bowl Excitement</a></em>
-      </div>
+      </>
   )
 }
 
