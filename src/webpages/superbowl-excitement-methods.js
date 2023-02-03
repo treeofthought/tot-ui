@@ -19,7 +19,7 @@ function SuperBowlExcitementMethod() {
         </div>
         <div className="col-md-10 offset-md-1 rounded-3 p-3 shadow bg-light mb-3">
           <p>
-            Here we go into detail on the metrics we used for <a href="/superbowl-excitement/methods" target="_blank" rel="noreferrer">measuring Super Bowl excitement</a>
+            Here we go into detail on the metrics we used for <a href="/superbowl-excitement">measuring Super Bowl excitement</a>
           </p>
           <h2>Contents</h2>
           <ul>
