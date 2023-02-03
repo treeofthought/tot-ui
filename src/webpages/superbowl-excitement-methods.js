@@ -9,6 +9,7 @@ import { MathComponent } from "mathjax-react";
 function SuperBowlExcitementMethod() {
   // const example = String.raw`\int_{-\infty}^{\infty}e^{-x^2}\ dx`;
   const surpriseForm = String.raw`Surprisingness = \sum_{i=1}^n \frac{1 - w_i}{n}`;
+  const tightForm = String.raw`Tightnesss = 1 - 2 * \big|0.5 - w_i\big|`
   
   return(
       <>
@@ -77,8 +78,9 @@ function SuperBowlExcitementMethod() {
             Mathematically, this manifests as "is the win probability mostly close to 0.5?" A simple formula for this would be the average absolute value of 0.5 minus the win probability.
           </p>
           <p>
-            But just like with surprisingness, we need to do some algebra so that the metric is  close to 0 when the game is not very tight, and "1" when the game is very tight.  In this case, the result of that algebra is 1 - 2 * abs(0.5 - win probability)
+            But just like with surprisingness, we need to do some algebra so that the metric is  close to 0 when the game is not very tight, and "1" when the game is very tight.  In this case, the result of that algebra is:
           </p>
+           <MathComponent tex={tightForm} display={true} />
           <p>
             This metric <em>also</em> has a convenienent visual interpretation.  If there is more area between the win probability line and the 50% mark, then the game is less tight.  Here's a picture:
           </p>
