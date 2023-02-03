@@ -1,5 +1,11 @@
 import DraftLogin from '../components/draft-login.js';
 import SB2013_SEA_DEN from '../2013_SEA_DEN.png';
+import SB2016_NE_ATL from '../2016_NE_ATL.png';
+import boringPlot from '../boring_plot.png';
+import surpriseExtremes from '../surprise_extremes.png';
+import tightExtremes from '../tight_extremes.png';
+import motionMotive from '../motion_motive.png';
+import motionExtremes from '../motion_extremes.png';
 
 function SuperBowlExcitementMethod() {
   return(
@@ -22,7 +28,7 @@ function SuperBowlExcitementMethod() {
           <h2>Why win probability graphs?</h2>
           <p>While thinking about past exciting Super Bowls, I kept coming back to Super Bowl LI between New England and Atlanta. New England’s win probability graph provides a visual shorthand for the extreme drama of the game:</p>
           <div className="text-center mb-5">
-            <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+            <img src={SB2016_NE_ATL} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
           </div>
           <p>The plot tells us that the Patriots kept it close for the first quarter, then were down and nearly out until the very end. They managed to force overtime, which they won in surprising and sudden fashion.  Not bad for one squiggly line!</p>
           <p>So, the win probability time series contains a lot of information about the game. This means metrics derived from it will <em>also</em> contain a lot of information about the game.</p>
@@ -30,7 +36,7 @@ function SuperBowlExcitementMethod() {
           <h2>The most boring game imaginable</h2>
           <p>To calibrate our metrics, let's start with the <em>least</em> exciting game.  I present to you, the win probability graph of The Most Boring Game Imaginable:</p>
           <div className="text-center mb-5">
-            <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+            <img src={boringPlot} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
           </div>
           <p>In this game, we are certain of who is going to win as soon as it kicks off, and it never even looks for a second like the favored team might lose. We may as well not have watched the game at all! So whatever metrics we come up with, they should always assign this game a zero.</p>
           <h2>Surprisingness</h2>
@@ -48,7 +54,7 @@ function SuperBowlExcitementMethod() {
           </p>
           <p>To show what we mean, here's the most and least surprising games:</p>
           <div className="text-center mb-5">
-            <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+            <img src={surpriseExtremes} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
           </div>
           <h2>Tightness</h2>
           <p>
@@ -64,8 +70,11 @@ function SuperBowlExcitementMethod() {
             But just like with surprisingness, we need to do some algebra so that the metric is "0" when the answer is "very far" and "1" when the answer is "very close."  In this case, the result of that algebra is 1 - 2 * abs(0.5 - win probability)
           </p>
           <p>
-            This metric <em>also</em> has a convenienent visual interpretation.  If there is more area between the l 
+            This metric <em>also</em> has a convenienent visual interpretation.  If there is more area between the win probability line and the 50% mark, then the game is less tight.  Here's a picture:
           </p>
+          <div className="text-center mb-5">
+            <img src={tightExtremes} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+          </div>
           <h2>Motion</h2>
           <p>
             We've got two good metrics now that we can use to balance the trade off between dramatic late comebacks and the need to be interesting throughout the game.
@@ -74,14 +83,14 @@ function SuperBowlExcitementMethod() {
             But there's a problem. Here are two clearly different games, but they have the same tightness and surprisingness measures!
           </p> 
           <div className="text-center mb-5">
-            <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+            <img src={motionMotive} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
           </div>
-          <p>Intuitively, the game on the left is more exciting, because it has more reversals of fortune than the one on the right. This is what we call <strong>motion</strong></p>
+          <p>Intuitively, the game on the right is more exciting, because it has more reversals of fortune than the one on the left. This is what we call <strong>motion</strong></p>
           <p>To calculate motion, we look at the change in win probability from one play to the next.  Big changes contribute a lot of motion, small changes contribute less motion.</p>
           <p>To be precise, our motion measure is the <a href="https://en.wikipedia.org/wiki/Root_mean_square" target="_blank">root mean square</a> of the change in win probability.</p>
           <p>A simple visual way to think about motion is of course "how much does the line squiggle?"  To show what we mean, here's the games with the most and least motion:</p>
           <div className="text-center mb-5">
-            <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+            <img src={motionExtremes} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
           </div>
           <p>Unfortunately, unlike surprisingness and tightness, motion does not have a finite range.  The most boring game imaginable does have 0 motion, but there is no maximum theoretical motion! (It's not hard to see why...there's no such thing as a line which is "the most squiggly")</p>
           <p>In practice, though, motion scores of real games tend to fall between 0.01 and 0.10</p>
@@ -95,6 +104,9 @@ function SuperBowlExcitementMethod() {
           <h2>Mathematical Details</h2>
           <h3>How come motion is squared?</h3>
           <h3>What's so hard about weighting all metrics equally?</h3>
+          <h3>A closer look at the relationship between surprisingness and tightness</h3>
+          <h3>How might we improve on motion?</h3>
+          <h3>Other metrics we might have employed</h3>
         </div>
           <em>Back to <a href="/superbowl-excitement">Super Bowl Excitement</a></em>
       </>

@@ -1,6 +1,9 @@
 import DraftLogin from '../components/draft-login.js';
 import { useEffect } from 'react';
 import SB2013_SEA_DEN from '../2013_SEA_DEN.png';
+import SB2016_NE_ATL from '../2016_NE_ATL.png';
+import SB2007_NYG_NE from '../2007_NYG_NE.png';
+import SB2014_NE_SEA from '../2014_NE_SEA.png';
 
 function SuperBowlExcitement() {
     useEffect(() => {
@@ -56,13 +59,13 @@ function SuperBowlExcitement() {
           <strong>Super Bowl XLII</strong> between New England and the New York Giants is third best in our composite score.  Here's the win probability chart:
         </p>
         <div className="text-center mb-5">
-          <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+          <img src={SB2007_NYG_NE} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
         </div>
         <p>
-          <strong>Super Bowl LI</strong> between New England and Atlanta was the most surprising outcome by far, and this made it second in our composite score despite being averag for motion and second-from last for tightness.
+          <strong>Super Bowl LI</strong> between New England and Atlanta was the most surprising outcome by far, and this made it second in our composite score despite being average for motion and second-from last for tightness.
         </p>  
         <div className="text-center mb-5">
-          <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+          <img src={SB2016_NE_ATL} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
         </div>
         <p>
           This illustrates the tradeoff between these two metrics. In order to be extremely surprising, a game must be extremely lopsided!
@@ -71,7 +74,7 @@ function SuperBowlExcitement() {
           And ranking at number one on our composite score is <strong>Super Bowl LIX</strong> between New England and Seattle.  Looking at the win probability chart, it does seem like this game had a good balance of tightness, surprise, and motion! 
         </p>
         <div className="text-center mb-5">
-          <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+          <img src={SB2014_NE_SEA} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
         </div>
         <p>
           The above illustrates that because we have three different metrics, the question of "most" exciting is complicated, because it matters how you balance those three metrics.
