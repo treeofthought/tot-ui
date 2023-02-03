@@ -1,5 +1,6 @@
 import DraftLogin from '../components/draft-login.js';
 import { useEffect } from 'react';
+import SB2013_SEA_DEN from '../2013_SEA_DEN.png';
 
 function SuperBowlExcitement() {
     useEffect(() => {
@@ -45,17 +46,42 @@ function SuperBowlExcitement() {
         <p>
           Explore our visualization below to see how each Super Bowl ranks along all three metrics! 
         </p>
-        <div className="flourish-embed flourish-table" data-src="visualisation/12623219?662766"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        <div className="row justify-content-center mb-5">
+          <div className="flourish-embed flourish-table" style={{maxWidth: '800px'}} data-src="visualisation/12623219?662766"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        </div>
         <p>
           So, what were the most exciting Superbowls?
         </p>
         <p>
-          <strong>Super Bowl XLII</strong> between New England and the New York Giants did very well in all metrics. It was scored as second most surprising and third most for tightness and motion.
-          <strong>Super Bowl LI</strong> between New England and Atlanta is an interesting game, ranking as the most surprising outcome, but also as the second-least tight game.  This illustrates the tradeoff between these two metrics. In order to be extremely surprising, a game must be extremely lopsided!
+          <strong>Super Bowl XLII</strong> between New England and the New York Giants is third best in our composite score.  Here's the win probability chart:
+        </p>
+        <div className="text-center mb-5">
+          <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+        </div>
+        <p>
+          <strong>Super Bowl LI</strong> between New England and Atlanta was the most surprising outcome by far, and this made it second in our composite score despite being averag for motion and second-from last for tightness.
+        </p>  
+        <div className="text-center mb-5">
+          <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+        </div>
+        <p>
+          This illustrates the tradeoff between these two metrics. In order to be extremely surprising, a game must be extremely lopsided!
         </p>
         <p>
-          Though there's some debate as to exactly which game is "most" exciting, we can say that <strong>Super Bowl XLVIII</strong> came dead last in all three metrics, making this the most one-sided, least-surprising, and static superbowl of them all.
+          And ranking at number one on our composite score is <strong>Super Bowl LIX</strong> between New England and Seattle.  Looking at the win probability chart, it does seem like this game had a good balance of tightness, surprise, and motion! 
         </p>
+        <div className="text-center mb-5">
+          <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+        </div>
+        <p>
+          The above illustrates that because we have three different metrics, the question of "most" exciting is complicated, because it matters how you balance those three metrics.
+        </p>
+        <p>
+          The question of <em>least</em> exciting is not so complex, because <strong>Super Bowl XLVIII</strong> came dead last in all three metrics, making this the most one-sided, least-surprising, and static superbowl of them all. Here's a closer look at the win probability chart:
+        </p>
+        <div className="text-center mb-5">
+          <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} />
+        </div>
         <p className="text-center"><a href="/superbowl-excitement/methods">Learn more about how we compute these metrics</a></p>
         <div className="text-center">~~~</div>
         <h5>Acknowledgements</h5>
