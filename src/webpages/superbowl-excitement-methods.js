@@ -4,8 +4,12 @@ import surpriseExtremes from '../surprise_extremes.png';
 import tightExtremes from '../tight_extremes.png';
 import motionMotive from '../motion_motive.png';
 import motionExtremes from '../motion_extremes.png';
+import { MathComponent } from "mathjax-react";
 
 function SuperBowlExcitementMethod() {
+  // const example = String.raw`\int_{-\infty}^{\infty}e^{-x^2}\ dx`;
+  const surpriseForm = String.raw`Surprisingness = \sum_{i=1}^n \frac{1 - w_i}{n}`;
+  
   return(
       <>
         <div className="d-flex flex-column align-items-center gap-2">
@@ -38,7 +42,7 @@ function SuperBowlExcitementMethod() {
           <h2 id="the-most-boring">The most boring game imaginable</h2>
           <p>To derive our metrics, let's start with the <em>least</em> exciting game.  I present to you, the win probability graph of The Most Boring Game Imaginable:</p>
           <div className="text-center mb-5">
-            <img src={boringPlot} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} alt="A maximally uninteresting game"/>/>
+            <img src={boringPlot} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} alt="A maximally uninteresting game"/>
           </div>
           <p>In this game, we are certain of who is going to win as soon as it kicks off, and it never looks for a second like the favored team might lose. We didn't even really need to watch that game! So <strong>whatever metrics we come up with, they should always be zero for this game.</strong></p>
           <h2 id="surprisingness">Surprisingness</h2>
@@ -51,6 +55,10 @@ function SuperBowlExcitementMethod() {
           <p>
             That's almost perfect, but it's backwards.  We want 0 to be least surprising and 1 to be most surprising, so we replace "average win probability" with "average <em>lose</em> probability" (which is just 1 minus the win probability).
           </p>
+          <p>
+            As an equation, the metric is: 
+          </p>
+          <MathComponent tex={surpriseForm} display={true} />
           <p>
             This measure is great! It's simple to calculate, easy to understand, and easy to interpret. It also has a clear geometric meaning...the surprisingness is "the area above the line" in the win probability chart.
           </p>
