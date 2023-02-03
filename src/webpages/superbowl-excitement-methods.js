@@ -3,7 +3,6 @@ import SB2013_SEA_DEN from '../2013_SEA_DEN.png';
 
 function SuperBowlExcitementMethod() {
   return(
-    <DraftLogin>
       <div className="d-flex flex-column align-items-center gap-2">
         <div className="d-flex flex-column align-items-center gap-2">
           <h1>Super Bowl Excitement Methodology</h1>
@@ -99,7 +98,6 @@ function SuperBowlExcitementMethod() {
         </div>
           <em>Back to <a href="/superbowl-excitement">Super Bowl Excitement</a></em>
       </div>
-    </DraftLogin>
   )
 }
 
