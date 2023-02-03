@@ -13,3 +13,7 @@ code {
 li:not(:last-child) {
     margin-bottom: 1.5em;
 }
+
+li.contentsList:not(:last-child) {
+    margin-bottom: .5em;
+}
