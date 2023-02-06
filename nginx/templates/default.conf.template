@@ -2,16 +2,15 @@
 
 
 server { 
-    listen 9000; 
+    listen $PORT; 
     server_name treeofthought.com;
         return 301 https://treeofthought.com$request_uri; 
 }
 
 server {
-    listen 9000;
+    listen $PORT;
     # save logs here
     access_log /var/log/nginx/access.log compression;
-
     ssi on;
 
     # where the root here

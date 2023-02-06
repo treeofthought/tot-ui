@@ -1,6 +1,6 @@
 FROM nginx:1.21.6-alpine
 
-EXPOSE 9000
+EXPOSE $PORT
 
 COPY ./build /var/www
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
