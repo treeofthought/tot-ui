@@ -1,6 +1,12 @@
 
 
 
+server { 
+    listen 9000; 
+    server_name treeofthought.com;
+        return 301 https://treeofthought.com$request_uri; 
+}
+
 server {
     listen 9000;
     # save logs here
