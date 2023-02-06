@@ -4,7 +4,9 @@
 server { 
     listen $PORT; 
     server_name treeofthought.com;
-        return 301 https://treeofthought.com$request_uri; 
+    if ($http_x_forwarded_proto = "http") {
+      return 301 https://$treeofthought.com$request_uri;
+  }
 }
 
 server {
