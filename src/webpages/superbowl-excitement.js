@@ -32,23 +32,15 @@ function SuperBowlExcitement() {
           <p>
             In this spirit, we decided to quantify the “excitement” of recent Super Bowls. To do this, we came up with three archetypes of “exciting” games:
           </p>
-          <ol>
-            <li>
-              <strong>The Shocking Upset</strong>:  One team is a heavy underdog with almost no chance of winning. They mount a sudden comeback and win at the last minute.
-            </li>
-            <li>
-              <strong>The Fierce Contest</strong>: Both teams are evenly matched all game long, until one finally wins at the very end.
-            </li>
-            <li>
-              <strong>The Give and Take</strong>: At first we’re positive one team will win, but suddenly they’re on the ropes, then suddenly they regain the advantage, then...
-            </li>
-          </ol>
-          <p>
-            Here are cartoon win probability graphs for each archetype:
-          </p>
-          <div className="text-center mb-5">
-            <img src={arch} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} alt="Super Bowl XLII between New England and the New York Giants"/>
-          </div>
+          <h3 className="text-muted">The Shocking Upset</h3>
+          <div class="flourish-embed flourish-chart" data-src="visualisation/12658386?662766"></div>
+          <p>One team is a heavy underdog with almost no chance of winning. They mount a sudden comeback and win at the last minute.</p>
+          <h3 className="text-muted">The Fierce Contest</h3>
+          <div class="flourish-embed flourish-chart" data-src="visualisation/12658424?662766"></div>
+          <p>Both teams are evenly matched all game long, until one finally wins at the very end.</p>
+          <h3 className="text-muted">The Give and Take</h3>
+          <div class="flourish-embed flourish-chart" data-src="visualisation/12658436?662766"></div>
+          <p>At first we’re positive one team will win, but suddenly they’re on the ropes, then suddenly they regain the advantage, then...</p>
           <p>
             Now all we need to do is find a way to score every game by its similarities to these three archetypes!
           </p>
@@ -97,16 +89,12 @@ function SuperBowlExcitement() {
           <p>
             The Giants upset the undefeated Patriots 17-14 in a closely contested game, with quarterback Eli Manning's last-minute touchdown pass to Plaxico Burress being the decisive play. This Super Bowl is widely regarded as one of the biggest upsets in NFL history, and is also remembered for <a href="https://en.wikipedia.org/wiki/Helmet_Catch" target="_blank" rel="noreferrer">the helmet catch</a>.
           </p>
-          <div className="text-center mb-5">
-            <img src={SB2007_NYG_NE} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} alt="Super Bowl XLII between New England and the New York Giants"/>
-          </div>
+          <div class="flourish-embed flourish-chart" data-src="visualisation/12658585?662766"></div>
           <h3 className="text-muted">2. Super Bowl LI: New England Patriots (34) vs Atlanta Falcons (28)</h3>
           <p>
             In which The Patriots made a historic comeback, overcoming a 25-point deficit to win in overtime with a score of 34-28. This is the first and so far only Super Bowl to go into overtime.  
           </p>
-          <div className="text-center mb-5">
-            <img src={SB2016_NE_ATL} style={{objectFit: 'contain', maxWidth: '800px', width:'100%' }} alt="Super Bowl LI between New England and Atlanta"/>
-          </div>
+          <div class="flourish-embed flourish-chart" data-src="visualisation/12658526?662766"></div>
           <p>
             This was the most surprising outcome by far, which carried it to second place in our composite ranking, despite being of average motion and second-from-last for tightness.
           </p>
@@ -114,9 +102,7 @@ function SuperBowlExcitement() {
           <p>
             This game had one of the most dramatic finishes in Super Bowl history. The fourth quarter was a back-and-forth battle with both teams exchanging the lead multiple times. Seattle took the lead 24-21 with two minutes to go. The Patriots then drove down the field to score a touchdown and take the lead 28-24 with just over a minute remaining. The Seahawks had one final chance to score, but their pass was intercepted by Patriots' rookie Malcolm Butler, sealing the victory for New England. It was a thrilling end to an unforgettable game.
           </p>
-          <div className="text-center mb-5">
-            <img src={SB2014_NE_SEA} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} alt="Super Bowl LIX between New England and Seatlle"/>
-          </div>
+          <div class="flourish-embed flourish-chart" data-src="story/1820082?662766"></div>
           <p>
             Notice how this game partially conforms to all three archetypes, being tight through the first half, surprising in the second half, and featuring lots of motion throughout.
           </p>

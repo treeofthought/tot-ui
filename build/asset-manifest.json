@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4b365436.css",
-    "main.js": "/static/js/main.7535b9eb.js",
+    "main.js": "/static/js/main.67d7f60a.js",
     "static/js/787.8cee36bb.chunk.js": "/static/js/787.8cee36bb.chunk.js",
     "static/media/arch.png": "/static/media/arch.db88a2b374fea55f491b.png",
     "static/media/tight_extremes.png": "/static/media/tight_extremes.88dc5427883c8d382f1c.png",
@@ -10,16 +10,16 @@
     "static/media/2007_NYG_NE.png": "/static/media/2007_NYG_NE.97df086ff12c73db6cbf.png",
     "static/media/2014_NE_SEA.png": "/static/media/2014_NE_SEA.6eed47e6aa815496e48a.png",
     "static/media/2016_NE_ATL.png": "/static/media/2016_NE_ATL.c896d0bb704b18a417cd.png",
-    "static/media/2013_SEA_DEN.png": "/static/media/2013_SEA_DEN.bf5f8b9353e7b8730381.png",
     "static/media/motion_motive.png": "/static/media/motion_motive.65f8823735776fac8e0a.png",
     "static/media/boring_plot.png": "/static/media/boring_plot.4344b8e8bc85043ba3c7.png",
+    "static/media/2013_SEA_DEN.png": "/static/media/2013_SEA_DEN.2c9632506cdd6ccad580.png",
     "index.html": "/index.html",
     "main.4b365436.css.map": "/static/css/main.4b365436.css.map",
-    "main.7535b9eb.js.map": "/static/js/main.7535b9eb.js.map",
+    "main.67d7f60a.js.map": "/static/js/main.67d7f60a.js.map",
     "787.8cee36bb.chunk.js.map": "/static/js/787.8cee36bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b365436.css",
-    "static/js/main.7535b9eb.js"
+    "static/js/main.67d7f60a.js"
   ]
 }
