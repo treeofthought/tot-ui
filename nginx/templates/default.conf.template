@@ -1,14 +1,6 @@
 
 
 
-server { 
-    listen $PORT; 
-    server_name treeofthought.com;
-    if ($scheme = "http") {
-      return 301 https://treeofthought.com$request_uri;
-  }
-}
-
 server {
     listen $PORT;
     # save logs here
@@ -19,6 +11,10 @@ server {
     root /var/www;
     # what file to server as index
     index index.html index.htm;
+
+    if ($http_x_forwarded_proto = "http") {
+      return 301 https://treeofthought.com$request_uri;
+    }
 
     location / {
         # First attempt to serve request as file, then
