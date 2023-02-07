@@ -68,7 +68,7 @@ function SuperBowlExcitement() {
           </p>
           <div class="flourish-embed flourish-chart" data-src="story/1821272?662766"></div>
           <p>
-            Now all we need to do is find a way to score every game by its similarities to these three archetypes!
+            Now all we need to do is find a way to rate every game by its similarities to these three archetypes!
           </p>
           <p>
             To do this, we invented three metrics, one for each archetype. The metrics are:
@@ -86,23 +86,23 @@ function SuperBowlExcitement() {
           </ol>
           <h2>Why three metrics?</h2>
           <p>
-            Consider <strong>The Shocking Upset</strong>.  Of course it’s exciting to see an unbelievable comeback, but what about the first 99% of the game? The Super Bowl takes almost four hours. That’s a lot of time to watch a lopsided game for a brief payoff.
+            Consider <strong>The Shocking Upset</strong>.  Of course it’s exciting to see an unbelievable comeback, but what about the first three quarters of the game? The Super Bowl takes almost four hours. That’s a lot of time to watch a lopsided game for a brief payoff.
           </p>
           <p>
-            So, the most surprising game is not the most exciting game. What we really need is a balance between the three metrics. Exciting games should have an upset and/or a comeback (surprise), but ideally each team has a realistic chance of winning (tightness), and there should be big dramatic shifts of fortune (motion).
+            So, The Shocking Upset is not the most over all exciting game. (Neither are the Fierce Contest or the Give and Take, if you think about it). We really need a healthy blend of all three archetypes. Exciting games should have an upset and/or a comeback (surprise), but the game should still be a contest (tightness), and it should have dramatic swings of fortune (motion).
           </p>
           <p>
-            To achieve this balance, we combined all three metrics into the <strong>composite score</strong>.  This is fairly subjective, because it matters how much you weight the individual metrics relative to each other. Would you rather see a close game or a surprising game?  For simplicity’s sake, we weighted all three metrics equally.
+            To find this balance, we combined all three metrics into the <strong>composite score</strong>.  This is fairly subjective, because it matters how much you weight the individual metrics relative to each other. Would you rather see a close game or a surprising game?  For simplicity’s sake, we weighted all three metrics equally.
           </p>
           <p>
-            The composite score is our final ranking of Super Bowl excitement.
+            Armed with a composite score, we can now rank the excitement of recent Super Bowls! 
           </p>
           <h2>So, what were the most exciting Superbowls?</h2>
           <p>Slow down, buddy! First...</p>
           <h2>Honorable Mention - The Least Exciting Game</h2>
           <h3 className="text-muted">Super Bowl XLVIII: Seattle Seahawks (43) vs Denver Broncos (8)</h3>
           <p>
-            Seattle routed Denver in a blowout. While the Seahawks' dominant performance was impressive, the game was too lopsided to be “thrilling.”  
+            Seattle whooped Denver. While the Seahawks' dominant performance was impressive, the game was too lopsided to be truly thrilling.
           </p>
           <p>
             In fact, this game ranked dead last in all three metrics!  Behold, the least surprising, least tight, least motion Super Bowl ever played:
@@ -113,7 +113,7 @@ function SuperBowlExcitement() {
           <h2>Okay, NOW the exciting games...</h2>
           <h3 className="text-muted">3. Super Bowl XLII: New York Giants (17) vs New England Patriots (14)</h3>
           <p>
-            The Giants upset the undefeated Patriots 17-14 in a closely contested game, with quarterback Eli Manning's last-minute touchdown pass to Plaxico Burress being the decisive play. This Super Bowl is widely regarded as one of the biggest upsets in NFL history, and is also remembered for <a href="https://en.wikipedia.org/wiki/Helmet_Catch" target="_blank" rel="noreferrer">the helmet catch</a>.
+            The Giants upset the undefeated Patriots 17-14, with Eli Manning's last-minute touchdown pass to Plaxico Burress being the decisive play. This Super Bowl is widely regarded as one of the biggest upsets in NFL history, and is also remembered for <a href="https://en.wikipedia.org/wiki/Helmet_Catch" target="_blank" rel="noreferrer">the helmet catch</a>.
           </p>
           <div class="flourish-embed flourish-chart" data-src="visualisation/12658585?662766"></div>
           <h3 className="text-muted">2. Super Bowl LI: New England Patriots (34) vs Atlanta Falcons (28)</h3>

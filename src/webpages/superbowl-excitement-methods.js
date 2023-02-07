@@ -1,15 +1,11 @@
-import SB2016_NE_ATL from '../2016_NE_ATL.png';
-import boringPlot from '../boring_plot.png';
-import surpriseExtremes from '../surprise_extremes.png';
-import tightExtremes from '../tight_extremes.png';
-import motionMotive from '../motion_motive.png';
+import SB2016_NE_ATL from '../2016_NE_ATL.svg';
+import boringPlot from '../boring_plot.svg';
+import surpriseExtremes from '../surprise_extremes.svg';
+import tightExtremes from '../tight_extremes.svg';
+import motionMotive from '../motion_motive.svg';
 import motionExtremes from '../motion_extremes.png';
-// import { MathComponent } from "mathjax-react";
 
 function SuperBowlExcitementMethod() {
-  // const example = String.raw`\int_{-\infty}^{\infty}e^{-x^2}\ dx`;
-  // const surpriseForm = String.raw`Surprisingness = \sum_{i=1}^n \frac{1 - w_i}{n}`;
-  // const tightForm = String.raw`Tightnesss = 1 - 2 * \big|0.5 - w_i\big|`
   
   return(
       <>
@@ -31,7 +27,6 @@ function SuperBowlExcitementMethod() {
               <li className="contentsList h5"><a href="#motion">Motion</a></li>
               <li className="contentsList h5"><a href="#composite">Composite</a></li>
               <li className="contentsList h5"><a href="#why-didnt-you">Wait, but why didn't you...?</a></li>
-              <li className="contentsList h5"><a href="#mathematical-details">Mathematical details</a></li>
             </ul>
             <h2 id="why-win-probability">Why win probability graphs?</h2>
             <p>Win probability graphs give us a visual shorthand what happened in a football game.  Consider the graph for Super Bowl LI between New England and Atlanta:</p>
@@ -58,11 +53,6 @@ function SuperBowlExcitementMethod() {
               That's almost perfect, but it's backwards.  We want 0 to be least surprising and 1 to be most surprising, so we replace "average win probability" with "average <em>lose</em> probability" (which is just 1 minus the win probability).
             </p>
             <p>
-              As an equation, the metric is: 
-            </p>
-            <div>LaTex here if I can figure that out</div>
-            {/*<MathComponent tex={surpriseForm} display={true} />*/}
-            <p>
               This measure is great! It's simple to calculate, easy to understand, and easy to interpret. It also has a clear geometric meaning...the surprisingness is "the area above the line" in the win probability chart.
             </p>
             <p>To show what we mean, here's the most and least surprising games:</p>
@@ -80,11 +70,13 @@ function SuperBowlExcitementMethod() {
               Mathematically, this manifests as "is the win probability mostly close to 0.5?" A simple formula for this would be the average absolute value of 0.5 minus the win probability.
             </p>
             <p>
-              But just like with surprisingness, we need to do some algebra so that the metric is  close to 0 when the game is not very tight, and "1" when the game is very tight.  In this case, the result of that algebra is:
+              But just like with surprisingness, we need to do some algebra so that the metric is  close to 0 when the game is not very tight, and "1" when the game is very tight.
             </p>
-             <div>LaTex here if I can figure that out</div>
             <p>
-              This metric <em>also</em> has a convenienent visual interpretation.  If there is more area between the win probability line and the 50% mark, then the game is less tight.  Here's a picture:
+              But never mind the algebra! Just like surprisingess, tightness has a convenienent visual interpretation.  This time, we're looking at the area between the curve and a horizontal line at 50% win probability...tighter games will have curves that capture less area.
+            </p>
+            <p>
+              Not quite sure what I mean? A picture is worth a thousand words:
             </p>
             <div className="text-center mb-5">
               <img src={tightExtremes} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} alt="Games with the most and least tightness"/>
@@ -106,21 +98,14 @@ function SuperBowlExcitementMethod() {
             <div className="text-center mb-5">
               <img src={motionExtremes} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} alt="The games with the most and least motion"/>
             </div>
-            <p>Unfortunately, unlike surprisingness and tightness, motion does not have a finite range.  The most boring game imaginable does have 0 motion, but there is no maximum theoretical motion! (It's not hard to see why...there's no such thing as a line which is "the most squiggly")</p>
-            <p>In practice, though, motion scores of real games tend to fall between 0.01 and 0.10</p>
             <h2 id="composite">Bringing it all together -- Composite score</h2>
             <p>We've come up with three ways to measure excitement, which is no mean feat. But to answer which game is <strong>the most</strong>  exciting, we need some way to combine these three measures into one final ordered list.</p>
             <p>There are lots of ways to do that, and in general this is a very complicated stats problem which is hard to talk about simply.</p>
             <p>But, all those complicated stats challenges really boil down to "what are the relative importances of each metric?  If we sacrifice some tightness to get more surprise, does that make the game more or less exciting?"</p>
             <p>For simplicity, we chose to value all metrics equally (though even that is not as simple as it sounds). And we chose to combine them using something called a "euclidean norm."  That's just a snobby way of saying "the composite score is the square root of the sum of the individual scores squared."  In other words, we used the pythagorean theorem to compute the composite!</p>
-            <h2 id="why-didnt-you">Wait, by why didn't you...?</h2>
-            <p>We thought pretty hard about this project and explored a lot of concepts that didn't make it into the final draft.  So maybe I can tell you why we did or didn't approach something a certain way...or maybe we plum didn't think of it!  Reach out to me on <a href="https://twitter.com/treeofthought1" target="_blank" rel="noreferrer">twitter</a> with questions or comments, I'd love to discuss.</p>
+            <h2 id="why-didnt-you">Wait, but why didn't you...?</h2>
+            <p>We thought pretty hard about this project and explored a lot of concepts that didn't make it into the final draft.  So maybe I can tell you why we did or didn't approach something a certain way...or maybe we plum didn't think of it!  Reach out to me on <a href="https://twitter.com/treeofthought1" target="_blank" rel="noreferrer">twitter</a> with questions or comments, I'd love to discuss!</p>
             <h2 id="mathematical-details">Mathematical Details</h2>
-            <h3>How come motion is squared?</h3>
-            <h3>What's so hard about weighting all metrics equally?</h3>
-            <h3>A closer look at the relationship between surprisingness and tightness</h3>
-            <h3>How might we improve on motion?</h3>
-            <h3>Other metrics we might have employed</h3>
           </div>
         </div>
         <em className="text-center mb-5">Back to <a href="/superbowl-excitement">Super Bowl Excitement</a></em>
