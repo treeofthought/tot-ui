@@ -12,7 +12,7 @@ import SuperBowlExcitementMethods from './webpages/superbowl-excitement-methods.
 
 function App() {
   return (
-    <div className="container d-flex flex-column gap-4 pt-5">
+    <div className="container-fluid d-flex flex-column gap-4 pt-5">
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/superbowl-excitement" element={<SuperBowlExcitement />} />

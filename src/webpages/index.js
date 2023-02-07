@@ -30,11 +30,13 @@ function Index() {
   return(
     <>
       <h1 className="text-center">Tree of Thought</h1>
-      <div className="col-md-10 offset-md-1 rounded p-3 shadow bg-light">
-        <p>My name is Stuart Mason.</p>
-        <p>I don't know what this website is yet. Part blog, part digital portfolio, maybe.</p>
-        <p>I'm working on a data science project that has to do with <a href="/superbowl-excitement">quantifying the excitement of Super Bowls</a>. (It's currently WIP, so please look past the rough edges!)</p>
-        <p>You can follow me on twitter: <a href="https://twitter.com/treeofthought1" target="_blank" rel="noreferrer">@treeofthought1</a></p>
+      <div className="col-12 col-lg-8 offset-lg-2 col-md-10 offset-md-1 rounded-3 p-3 pt-5 shadow bg-light mb-5 align-content-center">
+        <div className="mx-auto" style={{maxWidth: '650px'}}>
+          <p>My name is Stuart Mason.</p>
+          <p>I don't know what this website is yet. Part blog, part digital portfolio, maybe.</p>
+          <p>I'm working on a data science project that has to do with <a href="/superbowl-excitement">quantifying the excitement of Super Bowls</a>. (It's currently WIP, so please look past the rough edges!)</p>
+          <p>You can follow me on twitter: <a href="https://twitter.com/treeofthought1" target="_blank" rel="noreferrer">@treeofthought1</a></p>
+        </div>
       </div>
     </>
   )

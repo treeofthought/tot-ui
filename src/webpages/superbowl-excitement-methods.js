@@ -10,10 +10,10 @@ function SuperBowlExcitementMethod() {
   return(
       <>
         <div className="d-flex flex-column align-items-center gap-2">
-          <h1>Super Bowl Excitement Methodology</h1>
+          <h1 className="text-center">Super Bowl Excitement Methodology</h1>
           <em>In collaboration with <a href="https://www.daniellecarrick.com/" target="_blank" rel="noreferrer">Danielle Carrick</a></em>
         </div>
-        <div className="col-md-10 offset-md-1 rounded-3 p-3 p-3 pt-5 shadow bg-light mb-3">
+        <div className="col-sm-12 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1 rounded-3 p-3 pt-5 shadow bg-light mb-5 align-content-center">
           <div className="mx-auto" style={{maxWidth: '650px'}}>
             <p>
               Here we go into detail on the metrics we used for <a href="/superbowl-excitement">measuring Super Bowl excitement</a>
