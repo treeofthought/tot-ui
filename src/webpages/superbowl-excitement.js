@@ -58,6 +58,32 @@ function SuperBowlExcitement() {
               <strong>Motion</strong>: How much does the win probability spike up and down over the course of the game? 
             </li>
           </ol>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <p>
+            In this spirit, we decided to quantify the “excitement” of recent Super Bowls. To do this, we came up with three archetypes of “exciting” games:
+          </p>
+          <div class="flourish-embed flourish-chart" data-src="story/1821272?662766"></div>
+          <p>
+            Now all we need to do is find a way to score every game by its similarities to these three archetypes!
+          </p>
+          <p>
+            To do this, we invented three metrics, one for each archetype. The metrics are:
+          </p>
+          <ol>
+            <li>
+              <strong>Surprisingness</strong>: Is the average win probability close to zero?
+            </li>
+            <li>
+              <strong>Tightness</strong>: Is the average win probability close to 50%?
+            </li>
+            <li>
+              <strong>Motion</strong>: How much does the win probability spike up and down over the course of the game? 
+            </li>
+          </ol>
           <h2>Why three metrics?</h2>
           <p>
             Consider <strong>The Shocking Upset</strong>.  Of course it’s exciting to see an unbelievable comeback, but what about the first 99% of the game? The Super Bowl takes almost four hours. That’s a lot of time to watch a lopsided game for a brief payoff.
