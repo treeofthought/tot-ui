@@ -20,7 +20,8 @@ function SuperBowlExcitement() {
         <h1 className="text-center">Measuring Super Bowl Excitement</h1>
         <em>In collaboration with <a href="https://www.daniellecarrick.com/" target="_blank" rel="noreferrer">Danielle Carrick</a></em>
       </div>
-      <div className="col-sm-12 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1 rounded-3 p-3 pt-5 shadow bg-light mb-5 align-content-center">
+
+      <div className="col-sm-12 col-xl-8 offset-xl-2 col-md-10 offset-md-1 rounded-3 p-3 pt-5 shadow bg-light mb-5 align-content-center">
         <div className="mx-auto" style={{maxWidth: '650px'}}>
           <div className="mb-5">
             <p>
