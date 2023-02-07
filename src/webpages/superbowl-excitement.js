@@ -32,40 +32,6 @@ function SuperBowlExcitement() {
           <p>
             In this spirit, we decided to quantify the “excitement” of recent Super Bowls. To do this, we came up with three archetypes of “exciting” games:
           </p>
-          <h3 className="text-muted">The Shocking Upset</h3>
-          <div class="flourish-embed flourish-chart" data-src="visualisation/12658386?662766"></div>
-          <p>One team is a heavy underdog with almost no chance of winning. They mount a sudden comeback and win at the last minute.</p>
-          <h3 className="text-muted">The Fierce Contest</h3>
-          <div class="flourish-embed flourish-chart" data-src="visualisation/12658424?662766"></div>
-          <p>Both teams are evenly matched all game long, until one finally wins at the very end.</p>
-          <h3 className="text-muted">The Give and Take</h3>
-          <div class="flourish-embed flourish-chart" data-src="visualisation/12658436?662766"></div>
-          <p>At first we’re positive one team will win, but suddenly they’re on the ropes, then suddenly they regain the advantage, then...</p>
-          <p>
-            Now all we need to do is find a way to score every game by its similarities to these three archetypes!
-          </p>
-          <p>
-            To do this, we invented three metrics, one for each archetype. The metrics are:
-          </p>
-          <ol>
-            <li>
-              <strong>Surprisingness</strong>: Is the average win probability close to zero?
-            </li>
-            <li>
-              <strong>Tightness</strong>: Is the average win probability close to 50%?
-            </li>
-            <li>
-              <strong>Motion</strong>: How much does the win probability spike up and down over the course of the game? 
-            </li>
-          </ol>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <p>
-            In this spirit, we decided to quantify the “excitement” of recent Super Bowls. To do this, we came up with three archetypes of “exciting” games:
-          </p>
           <div class="flourish-embed flourish-chart" data-src="story/1821272?662766"></div>
           <p>
             Now all we need to do is find a way to rate every game by its similarities to these three archetypes!

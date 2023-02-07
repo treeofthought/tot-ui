@@ -3,7 +3,7 @@ import boringPlot from '../boring_plot.svg';
 import surpriseExtremes from '../surprise_extremes.svg';
 import tightExtremes from '../tight_extremes.svg';
 import motionMotive from '../motion_motive.svg';
-import motionExtremes from '../motion_extremes.png';
+import motionExtremes from '../motion_extremes.svg';
 
 function SuperBowlExcitementMethod() {
   
