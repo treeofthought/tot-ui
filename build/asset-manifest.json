@@ -1,22 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.4205709d.css",
-    "main.js": "/static/js/main.762a0289.js",
+    "main.js": "/static/js/main.e36f9391.js",
     "static/js/787.8cee36bb.chunk.js": "/static/js/787.8cee36bb.chunk.js",
     "static/media/2016_NE_ATL.svg": "/static/media/2016_NE_ATL.7b9b29c5fa85db1c2e9f8dd6c459e2d6.svg",
     "static/media/motion_motive.svg": "/static/media/motion_motive.6e087016e3996bc48758da54c1558891.svg",
-    "static/media/2013_SEA_DEN.png": "/static/media/2013_SEA_DEN.2c9632506cdd6ccad580.png",
     "static/media/surprise_extremes.svg": "/static/media/surprise_extremes.ee12c387aebe27f24893a6bfaff4bcc0.svg",
     "static/media/tight_extremes.svg": "/static/media/tight_extremes.ce95bb89ae5d76e1b981118fd5fdd93a.svg",
     "static/media/motion_extremes.svg": "/static/media/motion_extremes.1e93902f52d1b603ceb96ba18e93ef2b.svg",
     "static/media/boring_plot.svg": "/static/media/boring_plot.c204d2005da587941a97f8a7a135217c.svg",
     "index.html": "/index.html",
     "main.4205709d.css.map": "/static/css/main.4205709d.css.map",
-    "main.762a0289.js.map": "/static/js/main.762a0289.js.map",
+    "main.e36f9391.js.map": "/static/js/main.e36f9391.js.map",
     "787.8cee36bb.chunk.js.map": "/static/js/787.8cee36bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4205709d.css",
-    "static/js/main.762a0289.js"
+    "static/js/main.e36f9391.js"
   ]
 }

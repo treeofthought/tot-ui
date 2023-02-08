@@ -29,7 +29,7 @@ function SuperBowlExcitementMethod() {
               <li className="contentsList h5"><a href="#why-didnt-you">Wait, but why didn't you...?</a></li>
             </ul>
             <h2 id="why-win-probability">Why win probability graphs?</h2>
-            <p>Win probability graphs give us a visual shorthand what happened in a football game.  Consider the graph for Super Bowl LI between New England and Atlanta:</p>
+            <p>Win probability graphs give us a visual shorthand for what happened in a football game.  Consider the graph for Super Bowl LI between New England and Atlanta:</p>
             <div className="text-center mb-5">
               <img src={SB2016_NE_ATL} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} alt="Win probabilty chart for Super Bowl LI between New England and Atlanta"/>
             </div>

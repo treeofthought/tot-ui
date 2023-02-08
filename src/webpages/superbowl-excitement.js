@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import SB2013_SEA_DEN from '../2013_SEA_DEN.png';
 
 function SuperBowlExcitement() {
     useEffect(() => {
@@ -55,10 +54,10 @@ function SuperBowlExcitement() {
               Consider <strong>The Shocking Upset</strong>.  Of course it’s exciting to see an unbelievable comeback, but what about the first three quarters of the game? The Super Bowl takes almost four hours. That’s a lot of time to watch a lopsided game for a brief payoff.
             </p>
             <p>
-              So, The Shocking Upset is not the most over all exciting game. (Neither are the Fierce Contest or the Give and Take, if you think about it). We really need a healthy blend of all three archetypes. Exciting games should have an upset and/or a comeback (surprise), but the game should still be a contest (tightness), and it should have dramatic swings of fortune (motion).
+              So, The Shocking Upset is not the most over all exciting game. (Neither are The Fierce Contest or The Give and Take, if you think about it). We need a blend of all three archetypes. Exciting games should have an upset and/or a comeback (surprisingness), but both teams should have a chance at winning (tightness), and it should have dramatic swings of fortune (motion).
             </p>
             <p>
-              To find this balance, we combined all three metrics into the <strong>composite score</strong>.  This is fairly subjective, because it matters how much you weight the individual metrics relative to each other. Would you rather see a close game or a surprising game?  For simplicity’s sake, we weighted all three metrics equally.
+              In search of this balance, we combined all three metrics into the <strong>composite score</strong>.  This is subjective, because it matters how you weight the individual metrics relative to each other. Would you rather see a close game or a surprising game?  For simplicity’s sake, we weighted all three metrics equally.
             </p>
             <p>
               Armed with a composite score, we can now rank the excitement of recent Super Bowls! 
@@ -77,9 +76,8 @@ function SuperBowlExcitement() {
             <p>
               In fact, this game ranked dead last in all three metrics!  Behold, the least surprising, least tight, least motion Super Bowl ever played:
             </p>
-            <div className="text-center mb-5">
-              <img src={SB2013_SEA_DEN} style={{objectFit: 'contain', maxWidth: '800px', width:'100%'}} alt="Super Bowl XLVIII between Seattle and Denver"/>
-            </div>
+            <div class="flourish-embed flourish-chart" data-src="visualisation/12681099?662766"></div>
+            <div class="text-center"><em>Mouseover or tap on this plot to see the full context for every play of the game.</em></div>
           </div>
           <div className="mb-5">
             <h2>Okay, NOW the exciting games...</h2>
@@ -89,16 +87,18 @@ function SuperBowlExcitement() {
                 The Giants upset the undefeated Patriots 17-14, with Eli Manning's last-minute touchdown pass to Plaxico Burress being the decisive play. This Super Bowl is widely regarded as one of the biggest upsets in NFL history, and is also remembered for <a href="https://en.wikipedia.org/wiki/Helmet_Catch" target="_blank" rel="noreferrer">the helmet catch</a>.
               </p>
               <div class="flourish-embed flourish-chart" data-src="visualisation/12658585?662766"></div>
+              <div class="text-center"><em>Mouseover or tap on this plot to see the full context for every play of the game.</em></div>
             </div>
             <div className="mb-5">
               <h3 className="text-muted">2. Super Bowl LI: New England Patriots (34) vs Atlanta Falcons (28)</h3>
               <p>
                 In which The Patriots made a historic comeback, overcoming a 25-point deficit to win in overtime with a score of 34-28. This is the first and so far only Super Bowl to go into overtime.  
               </p>
-              <div class="flourish-embed flourish-chart" data-src="visualisation/12658526?662766"></div>
               <p>
                 This was the most surprising outcome by far, which carried it to second place in our composite ranking, despite being of average motion and second-from-last for tightness.
               </p>
+              <div class="flourish-embed flourish-chart" data-src="visualisation/12658526?662766"></div>
+              <div class="text-center"><em>Mouseover or tap on this plot to see the full context for every play of the game.</em></div>
             </div>
           </div>
           <div className="mb-5">
@@ -107,9 +107,7 @@ function SuperBowlExcitement() {
               This game had one of the most dramatic finishes in Super Bowl history. The fourth quarter was a back-and-forth battle with both teams exchanging the lead multiple times. Seattle took the lead 24-21 with two minutes to go. The Patriots then drove down the field to score a touchdown and take the lead 28-24 with just over a minute remaining. The Seahawks had one final chance to score, but their pass was intercepted by Patriots' rookie Malcolm Butler, sealing the victory for New England. It was a thrilling end to an unforgettable game.
             </p>
             <div class="flourish-embed flourish-chart" data-src="story/1820082?662766"></div>
-            <p>
-              Notice how this game partially conforms to all three archetypes, being tight through the first half, surprising in the second half, and featuring lots of motion throughout.
-            </p>
+            <div class="text-center"><em>Mouseover or tap on this plot to see the full context for every play of the game.</em></div>
           </div>
           <h2>Explore</h2>
           <p>
